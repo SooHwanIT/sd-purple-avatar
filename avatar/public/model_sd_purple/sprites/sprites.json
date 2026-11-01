@@ -1,0 +1,198 @@
+{
+ "eye_closed_r": {
+  "file": "sprites/eye_closed_r.png",
+  "w": 133.46,
+  "h": 25.82,
+  "cx": 397.25,
+  "cy": 610.11
+ },
+ "eye_closed_l": {
+  "file": "sprites/eye_closed_l.png",
+  "w": 140.22,
+  "h": 27.21,
+  "cx": 633.85,
+  "cy": 618.58
+ },
+ "eye_smile_r": {
+  "file": "sprites/eye_smile_r.png",
+  "w": 115.98,
+  "h": 43.29,
+  "cx": 397.95,
+  "cy": 601.65
+ },
+ "eye_smile_l": {
+  "file": "sprites/eye_smile_l.png",
+  "w": 123.9,
+  "h": 46.04,
+  "cx": 629.65,
+  "cy": 610.4
+ },
+ "mouth_closed": {
+  "file": "sprites/mouth_closed.png",
+  "w": 56.28,
+  "h": 7.37,
+  "cx": 517.3,
+  "cy": 662.48
+ },
+ "mouth_a": {
+  "file": "sprites/mouth_a.png",
+  "w": 58.8,
+  "h": 36.48,
+  "cx": 517.3,
+  "cy": 668.54
+ },
+ "mouth_e": {
+  "file": "sprites/mouth_e.png",
+  "w": 59.38,
+  "h": 25.03,
+  "cx": 517.3,
+  "cy": 662.82
+ },
+ "mouth_o_small": {
+  "file": "sprites/mouth_o_small.png",
+  "w": 39.98,
+  "h": 26.2,
+  "cx": 517.3,
+  "cy": 663.4
+ },
+ "mouth_i": {
+  "file": "sprites/mouth_i.png",
+  "w": 63.65,
+  "h": 26.59,
+  "cx": 517.3,
+  "cy": 663.59
+ },
+ "mouth_o": {
+  "file": "sprites/mouth_o.png",
+  "w": 40.75,
+  "h": 39.01,
+  "cx": 517.3,
+  "cy": 669.8
+ },
+ "mouth_smile": {
+  "file": "sprites/mouth_smile.png",
+  "w": 62.88,
+  "h": 27.36,
+  "cx": 517.3,
+  "cy": 663.98
+ },
+ "mouth_u": {
+  "file": "sprites/mouth_u.png",
+  "w": 38.62,
+  "h": 47.16,
+  "cx": 517.3,
+  "cy": 673.88
+ },
+ "mouth_laugh": {
+  "file": "sprites/mouth_laugh.png",
+  "w": 57.25,
+  "h": 46.77,
+  "cx": 517.3,
+  "cy": 673.68
+ },
+ "mouth_rest": {
+  "file": "sprites/mouth_rest.png",
+  "w": 59.5,
+  "h": 44.1,
+  "cx": 517.65,
+  "cy": 670.95
+ },
+ "brow_neutral_r": {
+  "file": "sprites/brow_neutral_r.png",
+  "w": 125.3,
+  "h": 17.97,
+  "cx": 401.45,
+  "cy": 492.45
+ },
+ "brow_neutral_l": {
+  "file": "sprites/brow_neutral_l.png",
+  "w": 115.5,
+  "h": 16.23,
+  "cx": 647.15,
+  "cy": 520.8
+ },
+ "brow_up_r": {
+  "file": "sprites/brow_up_r.png",
+  "w": 94.04,
+  "h": 32.82,
+  "cx": 401.45,
+  "cy": 492.45
+ },
+ "brow_up_l": {
+  "file": "sprites/brow_up_l.png",
+  "w": 86.57,
+  "h": 29.64,
+  "cx": 647.15,
+  "cy": 520.8
+ },
+ "brow_sad_r": {
+  "file": "sprites/brow_sad_r.png",
+  "w": 95.86,
+  "h": 35.69,
+  "cx": 401.45,
+  "cy": 492.45
+ },
+ "brow_sad_l": {
+  "file": "sprites/brow_sad_l.png",
+  "w": 87.04,
+  "h": 32.23,
+  "cx": 647.15,
+  "cy": 520.8
+ },
+ "brow_angry_r": {
+  "file": "sprites/brow_angry_r.png",
+  "w": 112.54,
+  "h": 38.03,
+  "cx": 401.45,
+  "cy": 492.45
+ },
+ "brow_angry_l": {
+  "file": "sprites/brow_angry_l.png",
+  "w": 102.33,
+  "h": 34.58,
+  "cx": 647.15,
+  "cy": 520.8
+ },
+ "fx_blush_r": {
+  "file": "sprites/fx_blush_r.png",
+  "w": 84.0,
+  "h": 43.35,
+  "cx": 414.4,
+  "cy": 656.6
+ },
+ "fx_blush_l": {
+  "file": "sprites/fx_blush_l.png",
+  "w": 84.0,
+  "h": 50.26,
+  "cx": 633.5,
+  "cy": 665.0
+ },
+ "fx_tear_r": {
+  "file": "sprites/fx_tear_r.png",
+  "w": 32.2,
+  "h": 48.59,
+  "cx": 357.7,
+  "cy": 667.1
+ },
+ "fx_tear_l": {
+  "file": "sprites/fx_tear_l.png",
+  "w": 32.2,
+  "h": 47.72,
+  "cx": 678.3,
+  "cy": 674.1
+ },
+ "fx_sweat": {
+  "file": "sprites/fx_sweat.png",
+  "w": 39.2,
+  "h": 71.1,
+  "cx": 742.0,
+  "cy": 483.0
+ },
+ "fx_anger": {
+  "file": "sprites/fx_anger.png",
+  "w": 84.0,
+  "h": 83.83,
+  "cx": 707.0,
+  "cy": 329.0
+ }
+}

@@ -1,0 +1,22 @@
+[
+ {
+  "name": "model",
+  "label": "SD (꼬마 아바타)"
+ },
+ {
+  "name": "model_sd_purple",
+  "label": "SD 보라 — 전신 2D (새 캐릭터)"
+ },
+ {
+  "name": "model_v10_cubism",
+  "label": "은발 v10 — 전신 Cubism (리깅 시험판)"
+ },
+ {
+  "name": "model_v11_cubism",
+  "label": "v11 은발 — 각도 그림 맞춤 (시험)"
+ },
+ {
+  "name": "model_vrm_test",
+  "label": "3D 시험 — VRoid 샘플 A (VRM)"
+ }
+]

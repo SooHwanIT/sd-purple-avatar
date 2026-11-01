@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>파츠 리그 시험</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #2b2636; overflow: hidden; }
+  canvas { width: 100%; height: 100%; display: block; }
+  #info { position: fixed; left: 10px; top: 8px; color: #ddd; font: 13px sans-serif; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="info">불러오는 중…</div>
+<script type="module">
+// 파츠 리그 시험: ?model=model_parts. 정해진 동작(고개·눈·입·몸)을 시간 순서대로 재생하고, 프레임을 서버로 보낼 수 있다.
+import { createStage } from './js/stage.js';
+import { MotionLimiter } from './js/motion.js';
+import { ExpressionActing } from './js/acting.js';
+import { makeRandomUser, meshStrain } from './js/qa_motion.js';
+
+const q = new URLSearchParams(location.search);
+const canvas = document.getElementById('c');
+const info = document.getElementById('info');
+const stage = await createStage(canvas, q.get('model') || 'model_parts');
+stage.setBackground('#2b2636');
+stage.auto.idle = false;
+stage.auto.blink = false;
+window.stage = stage;
+
+const S = (t, a, b) => Math.max(0, Math.min(1, (t - a) / (b - a)));
+const ease = (x) => x * x * (3 - 2 * x);
+// 시험 동작 (초): 정면 → 고개 좌우 → 기울이며 몸 흔들기 → 눈 깜빡임·눈동자 → 말하기 → 고개 확 돌리기(물리) → 정면
+export function timeline(t) {
+  const P = { angleX: 0, angleY: 0, angleZ: 0, eyeOpenL: 1, eyeOpenR: 1, eyeBallX: 0, eyeBallY: 0, mouthOpen: 0, mouthWide: 0, bodyX: 0, bodyZ: 0, bodyYaw: 0, brow: 0 };
+  if (t > 1.5 && t < 6.5) {
+    const u = (t - 1.5) / 5;
+    P.angleX = Math.sin(u * Math.PI * 2) * 26 * Math.sin(u * Math.PI);
+    P.eyeBallX = Math.sin(u * Math.PI * 2) * 0.5 * Math.sin(u * Math.PI);
+    P.angleY = Math.sin(u * Math.PI * 4) * 6 * Math.sin(u * Math.PI);
+  }
+  if (t > 6.5 && t < 10) {
+    // 고개 기울이며 몸을 옆으로·앞으로 (사람이 카메라 앞에서 움직이는 것처럼: 얼굴 위치 shift·다가감 lean)
+    const u = (t - 6.5) / 3.5;
+    P.angleZ = Math.sin(u * Math.PI * 2) * 14 * Math.sin(u * Math.PI);
+    P.shift = Math.sin(u * Math.PI * 2) * 6 * Math.sin(u * Math.PI);
+    P.lean = Math.sin(u * Math.PI) * 6;
+  }
+  if (t > 10 && t < 14) {
+    const u = t - 10;
+    P.eyeBallX = Math.sin(u * 1.6) * 0.9;
+    P.eyeBallY = Math.sin(u * 1.1) * 0.35;
+    for (const b of [0.6, 2.2, 3.1]) {
+      const k = Math.abs(u - b) / 0.09;
+      if (k < 1) P.eyeOpenL = P.eyeOpenR = k ** 1.5;
+    }
+    P.brow = Math.sin(u * 2) * 0.6;
+  }
+  if (t > 14 && t < 18.5) {
+    const u = t - 14;
+    const syl = Math.max(0, Math.sin(u * 9.5) * 0.6 + Math.sin(u * 4.1) * 0.4);
+    P.mouthOpen = syl * S(u, 0, 0.3) * (1 - S(u, 4.2, 4.5));
+    P.mouthWide = Math.max(0, Math.sin(u * 2.3)) * 0.6;
+    P.angleX = Math.sin(u * 1.3) * 6;
+    P.talk = P.mouthOpen * 0.5;
+  }
+  if (t > 18.5 && t < 22) {
+    const u = t - 18.5;
+    const step = u < 0.25 ? ease(u / 0.25) : u < 1.4 ? 1 : u < 1.65 ? 1 - 2 * ease((u - 1.4) / 0.25) : u < 2.8 ? -1 : -1 + ease(Math.min(1, (u - 2.8) / 0.3));
+    P.angleX = step * 24;
+  }
+  // 표정 (모델에 있으면): 미소 → 놀람 → 화남 → 부끄럼. 앱처럼 켬/끔으로 주고 부드러운 전환은 아래 처리 과정이 맡음
+  if (t > 22 && t < 30) {
+    const names = ['smile', 'surprised', 'angry', 'shy'];
+    const k = Math.floor((t - 22) / 2);
+    const u = (t - 22) % 2;
+    const on = u > 0.1 && u < 1.6 ? 1 : 0;
+    if (names[k]) P[`ex_${names[k]}`] = on;
+    if (names[k] === 'surprised') P.mouthOpen = 0.6 * on;
+  }
+  return P;
+}
+// 앱과 같은 처리 과정: 트래커처럼 몸이 고개를 따라오게(어깨가 안 보일 때 식) → 스프링·OneEuro 뒤 움직임 다듬기 → 표정 연기
+const motion = new MotionLimiter(undefined, stage.model.rig?.motionProfile);
+const acting = new ExpressionActing(undefined, stage.model.rig?.motionProfile);
+for (const n of Object.keys(stage.model?.rig?.expressions ?? {})) motion.addAxis(`ex_${n}`, { maxV: 4.5, maxA: 40, response: 10, deadzone: 0, fast: true });
+const clampv = (v, a, b) => Math.max(a, Math.min(b, v));
+export function pipeline(t, dt, src = timeline) {
+  const P = src(t);
+  P.bodyX = clampv((P.shift ?? 0) + P.angleZ * 0.1, -10, 10);
+  P.bodyZ = P.angleZ * 0.35;
+  P.bodyYaw = P.angleX * 0.3;
+  P.bodyLean = clampv((P.lean ?? 0) - P.angleY * 0.15, -10, 10);
+  delete P.shift;
+  delete P.lean;
+  motion.apply(P, dt);
+  acting.apply(P, dt);
+  return P;
+}
+window.pipeline = pipeline;
+window.resetPipe = () => { for (const a of Object.values(motion.axes)) { a.x = null; a.v = 0; } acting.kicks = []; acting.prev = {}; };
+window.timeline = timeline;
+
+// 실시간 재생 (가만히 보기용)
+let live = !q.has('capture');
+let t0 = performance.now();
+let last = t0;
+function loop(now) {
+  if (!live) return;
+  const dt = Math.min(0.05, (now - last) / 1000);
+  last = now;
+  const t = ((now - t0) / 1000) % 30;
+  stage.frame(q.has('raw') ? timeline(t) : pipeline(t, dt), dt);
+  info.textContent = `${t.toFixed(1)}초`;
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+// 프레임 저장: 30fps 로 정해진 시간만큼 (물리도 같은 간격으로)
+window.capture = async (seconds = 30, fps = 30, dir = 'frames_parts', quality = 0.9) => {
+  live = false;
+  stage.avatar.resetPhysics();
+  window.resetPipe();
+  const dt = 1 / fps;
+  // ?rand=씨앗 : 사람 같은 무작위 움직임(말하기·깜빡임·시선·표정)을 앱 처리 과정으로
+  const randUser = q.has('rand') ? makeRandomUser(+q.get('rand') || 1, Object.keys(stage.model?.rig?.expressions ?? {})) : null;
+  const src = q.has('raw') ? (t) => timeline(t) : randUser ? (t) => pipeline(t, dt, randUser) : (t) => pipeline(t, dt);
+  for (let i = 0; i < 30; i++) stage.frame(src(0), dt); // 물리 자리 잡기
+  const n = Math.round(seconds * fps);
+  for (let i = 0; i < n; i++) {
+    const t = i * dt;
+    stage.frame(src(t), dt);
+    const url = canvas.toDataURL('image/jpeg', quality);
+    await fetch(`/__frame?i=${i}&dir=${dir}`, { method: 'POST', body: url });
+    if (i % 30 === 0) info.textContent = `저장 ${i}/${n}`;
+  }
+  info.textContent = `저장 끝 (${n}장)`;
+  return n;
+};
+// 무작위 순간 검사: 사람 같은 무작위 움직임을 앱 처리 과정으로 돌리며 정해진 순간마다 화면을 저장하고 메쉬 늘어남을 잰다
+window.qaRun = async (seed = 1, seconds = 60, picks = 24, dir = 'qa', fps = 30) => {
+  live = false;
+  const user = makeRandomUser(seed, Object.keys(stage.model?.rig?.expressions ?? {}));
+  stage.time = 0; stage.avatar.time = 0; stage.avatar.resetPhysics(); window.resetPipe();
+  const dt = 1 / fps;
+  const n = Math.round(seconds * fps);
+  let r = seed * 7919 + 13;
+  const rnd = () => ((r = (r * 1103515245 + 12345) % 2147483648) / 2147483648);
+  const at = new Set();
+  while (at.size < picks) at.add(30 + Math.floor(rnd() * (n - 30)));
+  const report = [];
+  for (let i = 0; i < 30; i++) stage.frame(pipeline(0, dt, user), dt);
+  for (let i = 0; i < n; i++) {
+    const P = stage.frame(pipeline(i * dt, dt, user), dt);
+    if (!at.has(i)) continue;
+    const st = meshStrain(stage.avatar).filter((x) => x.max > 1.18 || x.min < 0.8).sort((a, b) => (b.max - 1 + 1 - b.min) - (a.max - 1 + 1 - a.min)).slice(0, 6);
+    const ex = Object.entries(P).filter(([k, v]) => k.startsWith('ex_') && v > 0.02).map(([k, v]) => `${k.slice(3)}:${v.toFixed(2)}`).join(',');
+    report.push({ i, t: +(i * dt).toFixed(2), ax: +P.angleX.toFixed(1), ay: +P.angleY.toFixed(1), az: +P.angleZ.toFixed(1), eye: +P.eyeOpenL.toFixed(2), mouth: +P.mouthOpen.toFixed(2), ex, strain: st });
+    await fetch(`/__frame?i=${i}&dir=${dir}`, { method: 'POST', body: canvas.toDataURL('image/png') });
+  }
+  return report;
+};
+window.still = (params) => { live = false; stage.frame({ ...timeline(0), ...params }, 1 / 30); return canvas.toDataURL('image/jpeg', 0.92); };
+info.textContent = '재생 중';
+window.ready = true;
+</script>
+</body>
+</html>

@@ -1,0 +1,4376 @@
+{
+ "type": "chibi",
+ "canvas": {
+  "w": 1055.6,
+  "h": 1400.0
+ },
+ "bounds": {
+  "x0": 210.0,
+  "y0": 63.0,
+  "x1": 854.0,
+  "y1": 1277.5
+ },
+ "scale": 0.7,
+ "layers": [
+  {
+   "tag": "leg_r",
+   "file": "layers/leg_r.png",
+   "x": 368.2,
+   "y": 905.8,
+   "w": 172.9,
+   "h": 284.2,
+   "space": "leg",
+   "side": "r",
+   "cell": 20
+  },
+  {
+   "tag": "strap",
+   "file": "layers/strap.png",
+   "x": 380.8,
+   "y": 1070.3,
+   "w": 48.3,
+   "h": 71.4,
+   "space": "leg",
+   "kind": "strap",
+   "side": "r",
+   "cell": 5
+  },
+  {
+   "tag": "leg_l",
+   "file": "layers/leg_l.png",
+   "x": 527.1,
+   "y": 905.8,
+   "w": 158.2,
+   "h": 284.9,
+   "space": "leg",
+   "side": "l",
+   "cell": 20
+  },
+  {
+   "tag": "shoe_r",
+   "file": "layers/shoe_r.png",
+   "x": 366.1,
+   "y": 1174.6,
+   "w": 178.5,
+   "h": 92.4,
+   "space": "foot",
+   "cell": 24
+  },
+  {
+   "tag": "shoe_l",
+   "file": "layers/shoe_l.png",
+   "x": 531.3,
+   "y": 1174.6,
+   "w": 154.7,
+   "h": 92.4,
+   "space": "foot",
+   "cell": 24
+  },
+  {
+   "tag": "chain",
+   "file": "layers/chain.png",
+   "x": 565.6,
+   "y": 998.2,
+   "w": 109.2,
+   "h": 85.4,
+   "space": "torso",
+   "kind": "chain",
+   "cell": 10,
+   "z0": 14
+  },
+  {
+   "tag": "neck",
+   "file": "layers/neck.png",
+   "x": 482.3,
+   "y": 646.1,
+   "w": 91.7,
+   "h": 100.8,
+   "space": "torso",
+   "kind": "neck",
+   "cell": 12
+  },
+  {
+   "tag": "inner",
+   "file": "layers/inner.png",
+   "x": 429.1,
+   "y": 724.5,
+   "w": 191.8,
+   "h": 287.0,
+   "space": "torso",
+   "kind": "inner",
+   "cell": 18,
+   "z0": 6
+  },
+  {
+   "tag": "necklace",
+   "file": "layers/necklace.png",
+   "x": 477.4,
+   "y": 737.1,
+   "w": 91.7,
+   "h": 116.9,
+   "space": "torso",
+   "kind": "necklace",
+   "cell": 8,
+   "z0": 18
+  },
+  {
+   "tag": "jacket_r",
+   "file": "layers/jacket_r.png",
+   "x": 348.6,
+   "y": 702.8,
+   "w": 276.5,
+   "h": 297.5,
+   "space": "torso",
+   "kind": "jacket",
+   "side": "r",
+   "cell": 14,
+   "z0": 12
+  },
+  {
+   "tag": "jacket_l",
+   "file": "layers/jacket_l.png",
+   "x": 366.1,
+   "y": 702.8,
+   "w": 366.8,
+   "h": 297.5,
+   "space": "torso",
+   "kind": "jacket",
+   "side": "l",
+   "cell": 14,
+   "z0": 12
+  },
+  {
+   "tag": "lapel_r",
+   "file": "layers/lapel_r.png",
+   "x": 419.3,
+   "y": 724.5,
+   "w": 63.0,
+   "h": 168.0,
+   "space": "torso",
+   "kind": "lapel",
+   "side": "r",
+   "cell": 8,
+   "z0": 24
+  },
+  {
+   "tag": "lapel_l",
+   "file": "layers/lapel_l.png",
+   "x": 564.9,
+   "y": 724.5,
+   "w": 69.3,
+   "h": 163.8,
+   "space": "torso",
+   "kind": "lapel",
+   "side": "l",
+   "cell": 8,
+   "z0": 24
+  },
+  {
+   "tag": "psq",
+   "file": "layers/psq.png",
+   "x": 588.7,
+   "y": 812.0,
+   "w": 58.1,
+   "h": 41.3,
+   "space": "torso",
+   "kind": "psq",
+   "cell": 5,
+   "z0": 18
+  },
+  {
+   "tag": "brooch",
+   "file": "layers/brooch.png",
+   "x": 613.9,
+   "y": 767.9,
+   "w": 42.7,
+   "h": 65.1,
+   "space": "torso",
+   "kind": "brooch",
+   "cell": 6,
+   "z0": 22
+  },
+  {
+   "tag": "hair_back",
+   "file": "layers/hair_back.png",
+   "x": 139.3,
+   "y": 151.9,
+   "w": 770.7,
+   "h": 590.1,
+   "space": "head",
+   "kind": "hair_back",
+   "cell": 20
+  },
+  {
+   "tag": "ahoge",
+   "file": "layers/ahoge.png",
+   "x": 431.2,
+   "y": 65.8,
+   "w": 248.5,
+   "h": 182.7,
+   "space": "head",
+   "kind": "ahoge",
+   "cell": 10,
+   "z0": -0.08
+  },
+  {
+   "tag": "ear_r",
+   "file": "layers/ear_r.png",
+   "x": 260.4,
+   "y": 625.8,
+   "w": 82.6,
+   "h": 66.5,
+   "space": "head",
+   "kind": "ear",
+   "side": "r",
+   "cell": 10
+  },
+  {
+   "tag": "ear_l",
+   "file": "layers/ear_l.png",
+   "x": 704.9,
+   "y": 623.0,
+   "w": 86.1,
+   "h": 102.2,
+   "space": "head",
+   "kind": "ear",
+   "side": "l",
+   "cell": 10
+  },
+  {
+   "tag": "face",
+   "file": "layers/face.png",
+   "x": 313.6,
+   "y": 385.0,
+   "w": 419.3,
+   "h": 356.3,
+   "space": "head",
+   "kind": "face",
+   "cell": 14
+  },
+  {
+   "tag": "white_r",
+   "file": "layers/white_r.png",
+   "x": 339.5,
+   "y": 560.0,
+   "w": 140.7,
+   "h": 98.0,
+   "space": "head",
+   "kind": "white",
+   "side": "r",
+   "cell": 4
+  },
+  {
+   "tag": "open_r",
+   "file": "layers/open_r.png",
+   "x": 339.5,
+   "y": 560.0,
+   "w": 140.7,
+   "h": 98.0,
+   "space": "head",
+   "kind": "eyemask",
+   "side": "r",
+   "cell": 4
+  },
+  {
+   "tag": "white_l",
+   "file": "layers/white_l.png",
+   "x": 540.4,
+   "y": 569.8,
+   "w": 156.8,
+   "h": 96.6,
+   "space": "head",
+   "kind": "white",
+   "side": "l",
+   "cell": 4
+  },
+  {
+   "tag": "open_l",
+   "file": "layers/open_l.png",
+   "x": 540.4,
+   "y": 569.8,
+   "w": 156.8,
+   "h": 96.6,
+   "space": "head",
+   "kind": "eyemask",
+   "side": "l",
+   "cell": 4
+  },
+  {
+   "tag": "iris_r",
+   "file": "layers/iris_r.png",
+   "x": 361.2,
+   "y": 548.8,
+   "w": 132.3,
+   "h": 109.2,
+   "space": "head",
+   "kind": "iris",
+   "side": "r",
+   "cell": 10,
+   "z0": 0.01
+  },
+  {
+   "tag": "iris_l",
+   "file": "layers/iris_l.png",
+   "x": 555.1,
+   "y": 560.0,
+   "w": 126.0,
+   "h": 105.0,
+   "space": "head",
+   "kind": "iris",
+   "side": "l",
+   "cell": 10,
+   "z0": 0.01
+  },
+  {
+   "tag": "lid_r",
+   "file": "layers/lid_r.png",
+   "x": 316.4,
+   "y": 543.2,
+   "w": 162.4,
+   "h": 43.4,
+   "space": "head",
+   "kind": "lid",
+   "side": "r",
+   "cell": 4,
+   "z0": 0.02
+  },
+  {
+   "tag": "lid_l",
+   "file": "layers/lid_l.png",
+   "x": 548.1,
+   "y": 555.1,
+   "w": 171.5,
+   "h": 39.9,
+   "space": "head",
+   "kind": "lid",
+   "side": "l",
+   "cell": 4,
+   "z0": 0.02
+  },
+  {
+   "tag": "hl_r",
+   "file": "layers/hl_r.png",
+   "x": 413.7,
+   "y": 560.0,
+   "w": 26.6,
+   "h": 26.6,
+   "space": "head",
+   "kind": "hl",
+   "side": "r",
+   "cell": 6,
+   "z0": 0.03
+  },
+  {
+   "tag": "hl_l",
+   "file": "layers/hl_l.png",
+   "x": 603.4,
+   "y": 569.8,
+   "w": 26.6,
+   "h": 25.9,
+   "space": "head",
+   "kind": "hl",
+   "side": "l",
+   "cell": 6,
+   "z0": 0.03
+  },
+  {
+   "tag": "crease_r",
+   "file": "layers/crease_r.png",
+   "x": 409.5,
+   "y": 519.4,
+   "w": 48.3,
+   "h": 21.7,
+   "space": "head",
+   "kind": "crease",
+   "side": "r",
+   "cell": 6,
+   "z0": 0.01
+  },
+  {
+   "tag": "crease_l",
+   "file": "layers/crease_l.png",
+   "x": 576.8,
+   "y": 531.3,
+   "w": 54.6,
+   "h": 19.6,
+   "space": "head",
+   "kind": "crease",
+   "side": "l",
+   "cell": 6,
+   "z0": 0.01
+  },
+  {
+   "tag": "hair",
+   "file": "layers/hair.png",
+   "x": 137.2,
+   "y": 151.9,
+   "w": 772.8,
+   "h": 561.4,
+   "space": "head",
+   "kind": "hair",
+   "cell": 14
+  },
+  {
+   "tag": "brow_r",
+   "file": "layers/brow_r.png",
+   "x": 336.0,
+   "y": 481.6,
+   "w": 131.6,
+   "h": 22.4,
+   "space": "head",
+   "kind": "brow",
+   "side": "r",
+   "cell": 5,
+   "z0": 0.07
+  },
+  {
+   "tag": "brow_l",
+   "file": "layers/brow_l.png",
+   "x": 586.6,
+   "y": 507.5,
+   "w": 121.8,
+   "h": 27.3,
+   "space": "head",
+   "kind": "brow",
+   "side": "l",
+   "cell": 5,
+   "z0": 0.07
+  },
+  {
+   "tag": "arm_r",
+   "file": "layers/arm_r.png",
+   "x": 147.7,
+   "y": 721.7,
+   "w": 246.4,
+   "h": 118.3,
+   "space": "arm",
+   "side": "r",
+   "cell": 9
+  },
+  {
+   "tag": "arm_l",
+   "file": "layers/arm_l.png",
+   "x": 667.1,
+   "y": 713.3,
+   "w": 238.0,
+   "h": 126.0,
+   "space": "arm",
+   "side": "l",
+   "cell": 9
+  },
+  {
+   "tag": "earring",
+   "file": "layers/earring.png",
+   "x": 679.0,
+   "y": 663.6,
+   "w": 53.2,
+   "h": 90.3,
+   "space": "head",
+   "kind": "earring",
+   "cell": 5,
+   "z0": 0.05
+  }
+ ],
+ "rig": {
+  "faceProfile": {
+   "version": 1,
+   "parametricExpressions": true
+  },
+  "head": {
+   "cx": 523.6,
+   "cy": 505.4,
+   "rx": 231.0,
+   "ry": 238.0
+  },
+  "skull": {
+   "c": [
+    523.6,
+    511.0
+   ],
+   "rz": 210.0
+  },
+  "face": {
+   "cx": 522.9,
+   "cy": 581.0,
+   "rx": 210.0,
+   "ry": 210.0
+  },
+  "neckPivot": [
+   525.0,
+   724.5
+  ],
+  "neck": {
+   "halfW": 32.2
+  },
+  "body": {
+   "hip": [
+    532.0,
+    1008.0
+   ],
+   "neck": [
+    532.0,
+    731.5
+   ],
+   "halfW": 178.5,
+   "hemTop": 931.0,
+   "hemBot": 1015.0
+  },
+  "arms": {
+   "r": {
+    "pivot": [
+     400.4,
+     775.6
+    ],
+    "hand": [
+     183.4,
+     777.0
+    ],
+    "elbow": 105.0,
+    "wrist": 178.5,
+    "root": 42.0,
+    "z": 21.0
+   },
+   "l": {
+    "pivot": [
+     663.6,
+     775.6
+    ],
+    "hand": [
+     869.4,
+     777.0
+    ],
+    "elbow": 105.0,
+    "wrist": 178.5,
+    "root": 42.0,
+    "z": 21.0
+   }
+  },
+  "legs": {
+   "r": {
+    "hip": [
+     455.0,
+     1008.0
+    ],
+    "foot": [
+     455.0,
+     1190.0
+    ]
+   },
+   "l": {
+    "hip": [
+     609.0,
+     1008.0
+    ],
+    "foot": [
+     609.0,
+     1190.0
+    ]
+   }
+  },
+  "eyes": {
+   "r": {
+    "x0": 319.2,
+    "x1": 475.3,
+    "ox0": 342.3,
+    "ox1": 476.7,
+    "up": {
+     "x0": 319.2,
+     "dx": 2,
+     "v": [
+      579.48,
+      579.22,
+      578.87,
+      578.52,
+      578.18,
+      577.85,
+      577.53,
+      577.22,
+      576.91,
+      576.62,
+      576.33,
+      576.06,
+      575.79,
+      575.53,
+      575.28,
+      575.04,
+      574.8,
+      574.58,
+      574.37,
+      574.16,
+      573.96,
+      573.78,
+      573.6,
+      573.43,
+      573.27,
+      573.11,
+      572.97,
+      572.84,
+      572.71,
+      572.59,
+      572.49,
+      572.39,
+      572.3,
+      572.22,
+      572.14,
+      572.08,
+      572.03,
+      571.98,
+      571.94,
+      571.92,
+      571.9,
+      571.89,
+      571.89,
+      571.9,
+      571.91,
+      571.94,
+      571.97,
+      572.02,
+      572.07,
+      572.13,
+      572.2,
+      572.28,
+      572.37,
+      572.47,
+      572.57,
+      572.69,
+      572.81,
+      572.94,
+      573.09,
+      573.24,
+      573.4,
+      573.56,
+      573.74,
+      573.93,
+      574.12,
+      574.33,
+      574.54,
+      574.76,
+      574.99,
+      575.23,
+      575.48,
+      575.74,
+      576.01,
+      576.28,
+      576.56,
+      576.86,
+      577.16,
+      577.47,
+      577.7
+     ]
+    },
+    "top": {
+     "x0": 319.2,
+     "dx": 2,
+     "v": [
+      562.1,
+      561.67,
+      561.09,
+      560.52,
+      559.96,
+      559.42,
+      558.9,
+      558.39,
+      557.9,
+      557.42,
+      556.96,
+      556.52,
+      556.1,
+      555.69,
+      555.29,
+      554.92,
+      554.56,
+      554.21,
+      553.89,
+      553.58,
+      553.28,
+      553.0,
+      552.74,
+      552.49,
+      552.26,
+      552.05,
+      551.85,
+      551.67,
+      551.51,
+      551.36,
+      551.23,
+      551.12,
+      551.02,
+      550.93,
+      550.87,
+      550.82,
+      550.79,
+      550.77,
+      550.77,
+      550.78,
+      550.82,
+      550.86,
+      550.93,
+      551.01,
+      551.11,
+      551.22,
+      551.35,
+      551.5,
+      551.66,
+      551.84,
+      552.04,
+      552.25,
+      552.48,
+      552.72,
+      552.98,
+      553.26,
+      553.55,
+      553.86,
+      554.19,
+      554.53,
+      554.89,
+      555.27,
+      555.66,
+      556.07,
+      556.49,
+      556.93,
+      557.39,
+      557.86,
+      558.35,
+      558.86,
+      559.38,
+      559.92,
+      560.48,
+      561.05,
+      561.63,
+      562.24,
+      562.86,
+      563.5,
+      563.96
+     ]
+    },
+    "low": {
+     "x0": 319.2,
+     "dx": 2,
+     "v": [
+      580.85,
+      580.61,
+      580.27,
+      579.92,
+      579.58,
+      579.25,
+      578.93,
+      578.62,
+      578.31,
+      578.02,
+      579.17,
+      586.52,
+      594.87,
+      603.84,
+      606.59,
+      609.33,
+      611.32,
+      615.81,
+      622.14,
+      628.91,
+      633.42,
+      634.98,
+      636.24,
+      637.22,
+      638.19,
+      639.08,
+      639.87,
+      640.44,
+      640.81,
+      641.26,
+      641.7,
+      642.47,
+      643.5,
+      644.91,
+      646.17,
+      647.34,
+      648.23,
+      649.12,
+      649.81,
+      650.44,
+      650.97,
+      651.41,
+      651.86,
+      652.16,
+      652.59,
+      652.83,
+      653.06,
+      653.1,
+      653.27,
+      653.49,
+      653.71,
+      653.8,
+      653.8,
+      653.8,
+      653.88,
+      653.88,
+      653.8,
+      653.51,
+      653.28,
+      653.1,
+      653.1,
+      652.9,
+      652.44,
+      651.7,
+      651.03,
+      650.44,
+      649.9,
+      649.23,
+      648.42,
+      647.44,
+      646.18,
+      644.63,
+      642.82,
+      640.6,
+      638.16,
+      635.31,
+      632.14,
+      628.29,
+      625.23
+     ]
+    },
+    "upMid": 572.21,
+    "openH": 79.25,
+    "closeY": 624.51,
+    "w": 134.4,
+    "lowMax": 653.88,
+    "iris": {
+     "cx": 425.03,
+     "cy": 603.05,
+     "w": 126.0,
+     "h": 102.9
+    },
+    "hl": [
+     426.99,
+     572.78
+    ]
+   },
+   "l": {
+    "x0": 551.6,
+    "x1": 716.1,
+    "ox0": 543.2,
+    "ox1": 693.7,
+    "up": {
+     "x0": 551.6,
+     "dx": 2,
+     "v": [
+      582.94,
+      582.84,
+      582.71,
+      582.59,
+      582.47,
+      582.36,
+      582.25,
+      582.15,
+      582.06,
+      581.97,
+      581.89,
+      581.81,
+      581.74,
+      581.68,
+      581.62,
+      581.56,
+      581.52,
+      581.48,
+      581.44,
+      581.41,
+      581.39,
+      581.37,
+      581.36,
+      581.35,
+      581.35,
+      581.36,
+      581.37,
+      581.39,
+      581.41,
+      581.44,
+      581.47,
+      581.51,
+      581.56,
+      581.61,
+      581.67,
+      581.74,
+      581.81,
+      581.88,
+      581.97,
+      582.05,
+      582.15,
+      582.25,
+      582.35,
+      582.47,
+      582.58,
+      582.71,
+      582.84,
+      582.97,
+      583.11,
+      583.26,
+      583.41,
+      583.57,
+      583.74,
+      583.91,
+      584.08,
+      584.26,
+      584.45,
+      584.65,
+      584.85,
+      585.05,
+      585.26,
+      585.48,
+      585.71,
+      585.93,
+      586.17,
+      586.41,
+      586.66,
+      586.91,
+      587.17,
+      587.43,
+      587.7,
+      587.98,
+      588.26,
+      588.55,
+      588.85,
+      589.15,
+      589.45,
+      589.76,
+      590.08,
+      590.4,
+      590.73,
+      591.07,
+      591.34
+     ]
+    },
+    "top": {
+     "x0": 551.6,
+     "dx": 2,
+     "v": [
+      578.63,
+      578.06,
+      577.27,
+      576.49,
+      575.74,
+      575.0,
+      574.28,
+      573.58,
+      572.91,
+      572.25,
+      571.61,
+      570.99,
+      570.4,
+      569.82,
+      569.26,
+      568.72,
+      568.2,
+      567.7,
+      567.22,
+      566.76,
+      566.32,
+      565.89,
+      565.49,
+      565.11,
+      564.75,
+      564.41,
+      564.08,
+      563.78,
+      563.5,
+      563.23,
+      562.99,
+      562.77,
+      562.56,
+      562.38,
+      562.21,
+      562.07,
+      561.94,
+      561.83,
+      561.75,
+      561.68,
+      561.63,
+      561.61,
+      561.6,
+      561.61,
+      561.64,
+      561.7,
+      561.77,
+      561.86,
+      561.97,
+      562.1,
+      562.25,
+      562.42,
+      562.61,
+      562.82,
+      563.05,
+      563.3,
+      563.56,
+      563.85,
+      564.16,
+      564.49,
+      564.83,
+      565.2,
+      565.59,
+      565.99,
+      566.42,
+      566.87,
+      567.33,
+      567.82,
+      568.32,
+      568.85,
+      569.39,
+      569.95,
+      570.54,
+      571.14,
+      571.76,
+      572.41,
+      573.07,
+      573.75,
+      574.45,
+      575.17,
+      575.92,
+      576.68,
+      577.3
+     ]
+    },
+    "low": {
+     "x0": 551.6,
+     "dx": 2,
+     "v": [
+      601.53,
+      610.49,
+      620.03,
+      627.48,
+      630.07,
+      631.4,
+      633.48,
+      636.3,
+      640.12,
+      643.82,
+      646.82,
+      649.12,
+      650.94,
+      652.63,
+      653.96,
+      655.07,
+      655.89,
+      656.78,
+      657.56,
+      658.3,
+      658.97,
+      659.56,
+      660.08,
+      660.44,
+      660.89,
+      661.22,
+      661.5,
+      661.67,
+      661.89,
+      662.11,
+      662.2,
+      662.32,
+      662.54,
+      662.77,
+      662.9,
+      662.82,
+      662.6,
+      662.38,
+      662.2,
+      662.2,
+      662.02,
+      661.8,
+      661.58,
+      661.28,
+      661.0,
+      660.51,
+      660.0,
+      659.26,
+      658.42,
+      657.46,
+      656.78,
+      656.47,
+      656.49,
+      656.49,
+      656.27,
+      655.94,
+      655.28,
+      654.54,
+      653.66,
+      653.06,
+      652.53,
+      651.69,
+      650.7,
+      649.52,
+      648.63,
+      647.74,
+      645.64,
+      639.53,
+      632.99,
+      626.38,
+      620.52,
+      608.82,
+      597.98,
+      589.95,
+      590.25,
+      590.55,
+      590.85,
+      591.16,
+      591.48,
+      591.81,
+      592.13,
+      592.46,
+      592.71
+     ]
+    },
+    "upMid": 581.86,
+    "openH": 79.37,
+    "closeY": 634.25,
+    "w": 150.5,
+    "lowMax": 662.9,
+    "iris": {
+     "cx": 618.43,
+     "cy": 612.15,
+     "w": 119.7,
+     "h": 98.7
+    },
+    "hl": [
+     616.33,
+     582.32
+    ]
+   }
+  },
+  "brows": {
+   "r": {
+    "cx": 401.45,
+    "hw": 62.65,
+    "h": 6.3
+   },
+   "l": {
+    "cx": 647.15,
+    "hw": 57.75,
+    "h": 6.3
+   }
+  },
+  "mouth": {
+   "cx": 517.42,
+   "cy": 670.92,
+   "w": 56.0,
+   "h": 40.6,
+   "fill": [
+    232,
+    162,
+    176
+   ],
+   "edge": [
+    196,
+    112,
+    130
+   ],
+   "cavity": [
+    192,
+    98,
+    120
+   ]
+  },
+  "blush": {
+   "cy": 661.5,
+   "spots": [
+    [
+     414.4,
+     656.6,
+     36.4,
+     14.0
+    ],
+    [
+     633.5,
+     665.0,
+     36.4,
+     14.0
+    ]
+   ]
+  },
+  "hair": {
+   "dome": {
+    "cx": 525.0,
+    "cy": 448.0,
+    "rx": 392.0,
+    "ry": 329.0,
+    "top": 1.0,
+    "bang": 0.12
+   },
+   "bends": [
+    {
+     "id": "flick",
+     "root": [
+      308.0,
+      231.0
+     ],
+     "tip": [
+      87.5,
+      206.5
+     ],
+     "radius": 31.5,
+     "param": "HairA",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 0.3,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "r_streak",
+     "root": [
+      315.0,
+      231.0
+     ],
+     "tip": [
+      206.5,
+      381.5
+     ],
+     "radius": 26.6,
+     "param": "HairB",
+     "scale": 0.8,
+     "layer": "hair",
+     "phase": 0.9,
+     "wind": 1.2,
+     "max": 10
+    },
+    {
+     "id": "r_spike1",
+     "root": [
+      238.0,
+      378.0
+     ],
+     "tip": [
+      66.5,
+      423.5
+     ],
+     "radius": 28.0,
+     "param": "HairC",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 1.5,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "r_spike2",
+     "root": [
+      224.0,
+      455.0
+     ],
+     "tip": [
+      35.0,
+      483.0
+     ],
+     "radius": 29.4,
+     "param": "HairD",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 2.1,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "r_spike3",
+     "root": [
+      182.0,
+      504.0
+     ],
+     "tip": [
+      105.0,
+      574.0
+     ],
+     "radius": 25.2,
+     "param": "HairE",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 2.7,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "r_hang1",
+     "root": [
+      210.0,
+      546.0
+     ],
+     "tip": [
+      175.0,
+      623.0
+     ],
+     "radius": 22.4,
+     "param": "HairF",
+     "scale": 0.9,
+     "layer": "hair",
+     "phase": 3.3,
+     "wind": 1.2,
+     "max": 12
+    },
+    {
+     "id": "r_hang2",
+     "root": [
+      259.0,
+      560.0
+     ],
+     "tip": [
+      234.5,
+      665.0
+     ],
+     "radius": 22.4,
+     "param": "HairA",
+     "scale": 0.8,
+     "layer": "hair",
+     "phase": 3.9,
+     "wind": 1.2,
+     "max": 10
+    },
+    {
+     "id": "r_cheek",
+     "root": [
+      315.0,
+      574.0
+     ],
+     "tip": [
+      308.0,
+      654.5
+     ],
+     "radius": 18.2,
+     "param": "HairC",
+     "scale": 0.6,
+     "layer": "hair",
+     "phase": 4.4,
+     "wind": 1.2,
+     "max": 8
+    },
+    {
+     "id": "r_low",
+     "root": [
+      301.0,
+      364.0
+     ],
+     "tip": [
+      161.0,
+      434.0
+     ],
+     "radius": 25.2,
+     "param": "HairE",
+     "scale": 0.8,
+     "layer": "hair",
+     "phase": 5.0,
+     "wind": 1.2,
+     "max": 10
+    },
+    {
+     "id": "bang_r",
+     "root": [
+      364.0,
+      420.0
+     ],
+     "tip": [
+      329.0,
+      560.0
+     ],
+     "radius": 23.8,
+     "param": "HairB",
+     "scale": 0.55,
+     "layer": "hair",
+     "phase": 0.6,
+     "wind": 1.2,
+     "max": 7
+    },
+    {
+     "id": "bang_c",
+     "root": [
+      483.0,
+      448.0
+     ],
+     "tip": [
+      451.5,
+      619.5
+     ],
+     "radius": 26.6,
+     "param": "HairD",
+     "scale": 0.55,
+     "layer": "hair",
+     "phase": 1.4,
+     "wind": 1.2,
+     "max": 5
+    },
+    {
+     "id": "bang_c2",
+     "root": [
+      532.0,
+      455.0
+     ],
+     "tip": [
+      525.0,
+      595.0
+     ],
+     "radius": 18.2,
+     "param": "HairF",
+     "scale": 0.5,
+     "layer": "hair",
+     "phase": 2.2,
+     "wind": 1.2,
+     "max": 5
+    },
+    {
+     "id": "bang_s",
+     "root": [
+      532.0,
+      301.0
+     ],
+     "tip": [
+      521.5,
+      490.0
+     ],
+     "radius": 23.8,
+     "param": "HairA",
+     "scale": 0.45,
+     "layer": "hair",
+     "phase": 2.9,
+     "wind": 1.2,
+     "max": 7
+    },
+    {
+     "id": "bang_l",
+     "root": [
+      630.0,
+      434.0
+     ],
+     "tip": [
+      672.0,
+      581.0
+     ],
+     "radius": 22.4,
+     "param": "HairC",
+     "scale": 0.55,
+     "layer": "hair",
+     "phase": 3.6,
+     "wind": 1.2,
+     "max": 7
+    },
+    {
+     "id": "l_big",
+     "root": [
+      756.0,
+      329.0
+     ],
+     "tip": [
+      906.5,
+      483.0
+     ],
+     "radius": 33.6,
+     "param": "HairD",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 0.4,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "l_spike",
+     "root": [
+      791.0,
+      490.0
+     ],
+     "tip": [
+      864.5,
+      591.5
+     ],
+     "radius": 26.6,
+     "param": "HairE",
+     "scale": 1.0,
+     "layer": "hair",
+     "phase": 1.2,
+     "wind": 1.2,
+     "max": 13
+    },
+    {
+     "id": "l_streak",
+     "root": [
+      742.0,
+      420.0
+     ],
+     "tip": [
+      777.0,
+      511.0
+     ],
+     "radius": 19.6,
+     "param": "HairF",
+     "scale": 0.8,
+     "layer": "hair",
+     "phase": 1.9,
+     "wind": 1.2,
+     "max": 10
+    },
+    {
+     "id": "l_hang1",
+     "root": [
+      784.0,
+      574.0
+     ],
+     "tip": [
+      829.5,
+      661.5
+     ],
+     "radius": 25.2,
+     "param": "HairB",
+     "scale": 0.9,
+     "layer": "hair",
+     "phase": 2.6,
+     "wind": 1.2,
+     "max": 12
+    },
+    {
+     "id": "l_hang2",
+     "root": [
+      752.5,
+      567.0
+     ],
+     "tip": [
+      770.0,
+      668.5
+     ],
+     "radius": 22.4,
+     "param": "HairA",
+     "scale": 0.8,
+     "layer": "hair",
+     "phase": 3.4,
+     "wind": 1.2,
+     "max": 10
+    },
+    {
+     "id": "ahoge",
+     "root": [
+      638.4,
+      227.5
+     ],
+     "tip": [
+      437.5,
+      133.0
+     ],
+     "radius": 280.0,
+     "param": "Ahoge",
+     "scale": 1.0,
+     "layer": "ahoge",
+     "phase": 0.0,
+     "wind": 2.4,
+     "max": 26
+    },
+    {
+     "id": "nape_r",
+     "root": [
+      392.0,
+      609.0
+     ],
+     "tip": [
+      381.5,
+      742.0
+     ],
+     "radius": 52.5,
+     "param": "HairB",
+     "scale": 0.5,
+     "layer": "hair_back",
+     "phase": 1.0,
+     "wind": 0.9,
+     "max": 8
+    },
+    {
+     "id": "nape_l",
+     "root": [
+      668.5,
+      609.0
+     ],
+     "tip": [
+      682.5,
+      742.0
+     ],
+     "radius": 52.5,
+     "param": "HairE",
+     "scale": 0.5,
+     "layer": "hair_back",
+     "phase": 2.3,
+     "wind": 0.9,
+     "max": 8
+    }
+   ]
+  },
+  "attach": {
+   "earring": {
+    "pivot": [
+     709.1,
+     666.4
+    ],
+    "mid": [
+     709.1,
+     697.9
+    ]
+   },
+   "ahoge": {
+    "root": [
+     638.4,
+     227.5
+    ]
+   },
+   "chain": {
+    "pivot": [
+     618.8,
+     999.6
+    ],
+    "len": 77.0
+   },
+   "necklace": {
+    "pivot": [
+     532.0,
+     743.4
+    ],
+    "len": 98.0
+   },
+   "brooch": {
+    "pivot": [
+     634.9,
+     778.4
+    ],
+    "len": 49.0
+   },
+   "psq": {
+    "pivot": [
+     626.5,
+     819.0
+    ],
+    "len": 28.0
+   },
+   "strap": {
+    "pivot": [
+     404.6,
+     1073.8
+    ],
+    "len": 61.6
+   }
+  },
+  "physics": {
+   "Version": 3,
+   "Meta": {
+    "PhysicsSettingCount": 19,
+    "Fps": 60,
+    "EffectiveForces": {
+     "Gravity": {
+      "X": 0,
+      "Y": -1
+     },
+     "Wind": {
+      "X": 0,
+      "Y": 0
+     }
+    }
+   },
+   "PhysicsSettings": [
+    {
+     "Id": "PhysicsSetting1",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairA"
+       },
+       "VertexIndex": 1,
+       "Scale": 23.493,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairA_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 32.088,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.74,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.651,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting2",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairB"
+       },
+       "VertexIndex": 1,
+       "Scale": 22.347,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairB_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 30.369,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.66,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.581,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting3",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairC"
+       },
+       "VertexIndex": 1,
+       "Scale": 25.212,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairC_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 33.806999999999995,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.7,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.616,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting4",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairD"
+       },
+       "VertexIndex": 1,
+       "Scale": 23.493,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairD_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 32.088,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.6,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.528,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting5",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairE"
+       },
+       "VertexIndex": 1,
+       "Scale": 26.358,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairE_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 35.525999999999996,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.78,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.686,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting6",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairF"
+       },
+       "VertexIndex": 1,
+       "Scale": 22.347,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HairF_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 30.369,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.56,
+       "Acceleration": 1.5,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.493,
+       "Acceleration": 1.5,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting7",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleY"
+       },
+       "Weight": 30,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 30,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Ahoge"
+       },
+       "VertexIndex": 1,
+       "Scale": 42.974999999999994,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Ahoge_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 71.625,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.9,
+       "Delay": 0.8,
+       "Acceleration": 1.6,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.9,
+       "Delay": 0.704,
+       "Acceleration": 1.6,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting8",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 90,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 30,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 30,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Earring"
+       },
+       "VertexIndex": 1,
+       "Scale": 51.57,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Earring_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 57.3,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 8
+       },
+       "Mobility": 0.96,
+       "Delay": 0.9,
+       "Acceleration": 1.5,
+       "Radius": 8
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 16
+       },
+       "Mobility": 0.96,
+       "Delay": 0.792,
+       "Acceleration": 1.5,
+       "Radius": 8
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting9",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Chain"
+       },
+       "VertexIndex": 1,
+       "Scale": 34.379999999999995,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Chain_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 40.10999999999999,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.8,
+       "Acceleration": 1.4,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.704,
+       "Acceleration": 1.4,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting10",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 50,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 60,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 15,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Necklace"
+       },
+       "VertexIndex": 1,
+       "Scale": 20.054999999999996,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Necklace_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 22.92,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.95,
+       "Delay": 0.8,
+       "Acceleration": 1.4,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.95,
+       "Delay": 0.704,
+       "Acceleration": 1.4,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting11",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Brooch"
+       },
+       "VertexIndex": 1,
+       "Scale": 28.65,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Brooch_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 34.379999999999995,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 8
+       },
+       "Mobility": 0.95,
+       "Delay": 0.85,
+       "Acceleration": 1.4,
+       "Radius": 8
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 16
+       },
+       "Mobility": 0.95,
+       "Delay": 0.748,
+       "Acceleration": 1.4,
+       "Radius": 8
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting12",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HemR"
+       },
+       "VertexIndex": 1,
+       "Scale": 6.8759999999999994,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 12
+       },
+       "Mobility": 0.85,
+       "Delay": 0.8,
+       "Acceleration": 1.2,
+       "Radius": 12
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting13",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "HemL"
+       },
+       "VertexIndex": 1,
+       "Scale": 6.8759999999999994,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 12
+       },
+       "Mobility": 0.85,
+       "Delay": 0.72,
+       "Acceleration": 1.2,
+       "Radius": 12
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting14",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Psq"
+       },
+       "VertexIndex": 1,
+       "Scale": 17.189999999999998,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 8
+       },
+       "Mobility": 0.9,
+       "Delay": 0.85,
+       "Acceleration": 1.3,
+       "Radius": 8
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting15",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 80,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyY"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Strap"
+       },
+       "VertexIndex": 1,
+       "Scale": 28.65,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Strap_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 28.65,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 10
+       },
+       "Mobility": 0.93,
+       "Delay": 0.8,
+       "Acceleration": 1.4,
+       "Radius": 10
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 20
+       },
+       "Mobility": 0.93,
+       "Delay": 0.704,
+       "Acceleration": 1.4,
+       "Radius": 10
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting16",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 60,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 40,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 25,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "Cheek"
+       },
+       "VertexIndex": 1,
+       "Scale": 19.482,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 6
+       },
+       "Mobility": 0.9,
+       "Delay": 0.86,
+       "Acceleration": 1.7,
+       "Radius": 6
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting17",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleY"
+       },
+       "Weight": 50,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyY"
+       },
+       "Weight": 50,
+       "Type": "X",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "CheekY"
+       },
+       "VertexIndex": 1,
+       "Scale": 17.189999999999998,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 6
+       },
+       "Mobility": 0.9,
+       "Delay": 0.86,
+       "Acceleration": 1.7,
+       "Radius": 6
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting18",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyYaw"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 20,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "ArmSwingR"
+       },
+       "VertexIndex": 1,
+       "Scale": 12.606,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "ArmSwingR_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 10.313999999999998,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 12
+       },
+       "Mobility": 0.88,
+       "Delay": 0.75,
+       "Acceleration": 1.2,
+       "Radius": 12
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 24
+       },
+       "Mobility": 0.88,
+       "Delay": 0.66,
+       "Acceleration": 1.2,
+       "Radius": 12
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    },
+    {
+     "Id": "PhysicsSetting19",
+     "Input": [
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyX"
+       },
+       "Weight": 70,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyZ"
+       },
+       "Weight": 70,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "BodyYaw"
+       },
+       "Weight": 40,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleX"
+       },
+       "Weight": 15,
+       "Type": "X",
+       "Reflect": false
+      },
+      {
+       "Source": {
+        "Target": "Parameter",
+        "Id": "AngleZ"
+       },
+       "Weight": 20,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Output": [
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "ArmSwingL"
+       },
+       "VertexIndex": 1,
+       "Scale": 12.606,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      },
+      {
+       "Destination": {
+        "Target": "Parameter",
+        "Id": "ArmSwingL_2"
+       },
+       "VertexIndex": 2,
+       "Scale": 10.313999999999998,
+       "Weight": 100,
+       "Type": "Angle",
+       "Reflect": false
+      }
+     ],
+     "Vertices": [
+      {
+       "Position": {
+        "X": 0,
+        "Y": 0
+       },
+       "Mobility": 1,
+       "Delay": 1,
+       "Acceleration": 1,
+       "Radius": 0
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 12
+       },
+       "Mobility": 0.88,
+       "Delay": 0.72,
+       "Acceleration": 1.2,
+       "Radius": 12
+      },
+      {
+       "Position": {
+        "X": 0,
+        "Y": 24
+       },
+       "Mobility": 0.88,
+       "Delay": 0.634,
+       "Acceleration": 1.2,
+       "Radius": 12
+      }
+     ],
+     "Normalization": {
+      "Position": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      },
+      "Angle": {
+       "Minimum": -10,
+       "Default": 0,
+       "Maximum": 10
+      }
+     }
+    }
+   ]
+  },
+  "expressions": {
+   "smile": {
+    "label": "미소",
+    "key": "2",
+    "params": {
+     "eyeOpenL": 0.0,
+     "eyeOpenR": 0.0,
+     "eyeSmile": 0.0,
+     "mouthForm": 0.75,
+     "blush": 0.25
+    }
+   },
+   "sad": {
+    "label": "슬픔",
+    "key": "3",
+    "params": {
+     "tear": 0.55,
+     "mouthWavy": 1,
+     "mouthForm": -0.6,
+     "eyeOpenL": 0.85,
+     "eyeOpenR": 0.85,
+     "browL": 0.25,
+     "browR": 0.25,
+     "browTiltL": 0.6,
+     "browTiltR": 0.6
+    }
+   },
+   "surprised": {
+    "label": "놀람",
+    "key": "4",
+    "params": {
+     "eyeWiden": 1,
+     "pupil": -0.7,
+     "mouthOpen": 0.3,
+     "mouthNarrow": 0.9,
+     "brow": 0.5
+    }
+   },
+   "angry": {
+    "label": "화남",
+    "key": "5",
+    "params": {
+     "anger": 1,
+     "lidTilt": 0.5,
+     "eyeOpenL": 0.8,
+     "eyeOpenR": 0.8,
+     "mouthPress": 1,
+     "mouthForm": -0.5
+    }
+   },
+   "shy": {
+    "label": "부끄러움",
+    "key": "6",
+    "params": {
+     "blush": 1,
+     "eyeOpenL": 0.7,
+     "eyeOpenR": 0.7,
+     "eyeBallX": 0.45,
+     "eyeBallY": -0.3,
+     "mouthPress": 1,
+     "mouthForm": 0.2
+    }
+   },
+   "wink": {
+    "label": "윙크",
+    "key": "7",
+    "params": {
+     "mouthForm": 0.5
+    }
+   },
+   "sleepy": {
+    "label": "졸림",
+    "key": "8",
+    "params": {
+     "mouthPress": 1
+    }
+   },
+   "laugh": {
+    "label": "활짝 웃음",
+    "key": "9",
+    "params": {
+     "eyeSmile": 1,
+     "blush": 0.4,
+     "mouthForm": 1
+    },
+    "add": {
+     "mouthOpen": 0.6,
+     "mouthWide": 0.3
+    }
+   },
+   "heart": {
+    "label": "하트 눈",
+    "key": "0",
+    "params": {
+     "heartEyes": 1,
+     "blush": 0.7,
+     "mouthForm": 0.7
+    }
+   },
+   "excited": {
+    "label": "신남",
+    "params": {
+     "eyeSmileR": 1,
+     "eyeOpenL": 1.1,
+     "mouthForm": 1,
+     "blush": 0.3,
+     "brow": 0.3
+    },
+    "add": {
+     "mouthOpen": 0.55,
+     "mouthWide": 0.3
+    }
+   },
+   "asleep": {
+    "label": "자장",
+    "params": {
+     "eyeOpenL": 0.0,
+     "eyeOpenR": 0.0,
+     "mouthPress": 1,
+     "mouthForm": 0.1
+    }
+   },
+   "blank": {
+    "label": "멍함",
+    "params": {
+     "blankEyes": 1,
+     "eyeOpenL": 0.9,
+     "eyeOpenR": 0.9,
+     "brow": 0.1
+    }
+   },
+   "shock": {
+    "label": "당황",
+    "params": {
+     "eyeWiden": 0.6,
+     "pupil": -0.6,
+     "sweat": 1,
+     "gloom": 0.5,
+     "mouthWavy": 1,
+     "brow": 0.3
+    }
+   },
+   "pout": {
+    "label": "삐짐",
+    "params": {
+     "mouthPress": 1,
+     "mouthForm": -0.7,
+     "blush": 0.4,
+     "brow": -0.35,
+     "eyeBallX": 0.6,
+     "eyeBallY": 0.15,
+     "eyeSquintL": 0.25,
+     "eyeSquintR": 0.25
+    }
+   },
+   "teary": {
+    "label": "울먹임",
+    "params": {
+     "tear": 0.75,
+     "mouthWavy": 1,
+     "mouthForm": -0.4,
+     "eyeOpenL": 0.95,
+     "eyeOpenR": 0.95,
+     "browL": 0.35,
+     "browR": 0.35,
+     "browTiltL": 0.7,
+     "browTiltR": 0.7,
+     "blush": 0.2
+    }
+   },
+   "cry": {
+    "label": "대성통곡",
+    "params": {
+     "eyeCross": 1,
+     "tear": 1,
+     "mouthOpen": 0.8,
+     "mouthWide": 0.3,
+     "mouthForm": -0.8,
+     "blush": 0.3,
+     "browL": 0.3,
+     "browR": 0.3,
+     "browTiltL": 0.6,
+     "browTiltR": 0.6
+    }
+   },
+   "tired": {
+    "label": "지침",
+    "params": {
+     "eyeOpenL": 0.5,
+     "eyeOpenR": 0.5,
+     "brow": -0.15,
+     "mouthPress": 1,
+     "mouthForm": -0.3,
+     "gloom": 0.3
+    }
+   },
+   "bashful": {
+    "label": "수줍음",
+    "params": {
+     "blush": 0.6,
+     "eyeBallX": 0.4,
+     "eyeBallY": -0.35,
+     "eyeOpenL": 0.9,
+     "eyeOpenR": 0.9,
+     "mouthForm": 0.3,
+     "mouthPress": 1
+    }
+   },
+   "doubt": {
+    "label": "의심",
+    "params": {
+     "question": 1,
+     "eyeOpenL": 0.6,
+     "eyeOpenR": 0.6,
+     "lidTilt": 0.3,
+     "browL": -0.35,
+     "browR": 0.4,
+     "browTiltL": -0.4,
+     "mouthPress": 1,
+     "mouthForm": -0.2,
+     "eyeBallX": 0.3
+    }
+   },
+   "think": {
+    "label": "생각중",
+    "params": {
+     "eyeBallX": 0.45,
+     "eyeBallY": 0.75,
+     "brow": 0.2,
+     "mouthPress": 1,
+     "handRW": 1,
+     "handRX": -0.5,
+     "handRY": 1.12,
+     "hpR_fist": 1
+    }
+   },
+   "openhands": {
+    "label": "편손",
+    "params": {
+     "hpR_relax": 1,
+     "hpL_relax": 1,
+     "handRW": 1,
+     "handRX": -1.0,
+     "handRY": 1.7,
+     "handLW": 1,
+     "handLX": 1.0,
+     "handLY": 1.7
+    }
+   },
+   "fists": {
+    "label": "주먹",
+    "params": {
+     "hpR_fist": 1,
+     "hpL_fist": 1,
+     "handRW": 1,
+     "handRX": -0.45,
+     "handRY": 1.2,
+     "handLW": 1,
+     "handLX": 0.45,
+     "handLY": 1.2,
+     "brow": -0.1,
+     "mouthPress": 1
+    }
+   },
+   "point": {
+    "label": "가리키기",
+    "params": {
+     "hpR_point": 1,
+     "handRW": 1,
+     "handRX": -1.35,
+     "handRY": 0.05,
+     "eyeBallX": -0.3,
+     "mouthOpen": 0.25
+    }
+   },
+   "vsign": {
+    "label": "브이",
+    "params": {
+     "hpR_v": 1,
+     "handRW": 1,
+     "handRX": -1.1,
+     "handRY": 0.7,
+     "eyeOpenR": 0.0,
+     "mouthForm": 0.6,
+     "blush": 0.2
+    }
+   },
+   "fingerheart": {
+    "label": "손하트",
+    "params": {
+     "hpR_heart": 1,
+     "hpL_heart": 1,
+     "handRW": 1,
+     "handRX": -0.4,
+     "handRY": 1.1,
+     "handLW": 1,
+     "handLX": 0.4,
+     "handLY": 1.1,
+     "blush": 0.5,
+     "mouthForm": 0.5,
+     "eyeOpenL": 0.85,
+     "eyeOpenR": 0.85
+    }
+   },
+   "grab": {
+    "label": "파지",
+    "params": {
+     "hpR_grab": 1,
+     "hpL_grab": 1,
+     "handRW": 1,
+     "handRX": -0.65,
+     "handRY": 1.05,
+     "handLW": 1,
+     "handLX": 0.65,
+     "handLY": 1.05,
+     "lidTilt": 0.3,
+     "mouthPress": 1
+    }
+   },
+   "surprisehands": {
+    "label": "놀람손",
+    "params": {
+     "hpR_spread": 1,
+     "hpL_spread": 1,
+     "handRW": 1,
+     "handRX": -1.2,
+     "handRY": 0.45,
+     "handLW": 1,
+     "handLX": 1.2,
+     "handLY": 0.45,
+     "eyeWiden": 0.8,
+     "pupil": -0.5,
+     "mouthOpen": 0.3,
+     "mouthNarrow": 0.9,
+     "brow": 0.45
+    }
+   },
+   "handsup": {
+    "label": "양손 들기",
+    "params": {
+     "hpR_palm": 1,
+     "hpL_palm": 1,
+     "handRW": 1,
+     "handRX": -0.95,
+     "handRY": -0.7,
+     "handLW": 1,
+     "handLX": 0.95,
+     "handLY": -0.7,
+     "eyeSmile": 1,
+     "mouthForm": 1,
+     "blush": 0.3
+    },
+    "add": {
+     "mouthOpen": 0.55,
+     "mouthWide": 0.3
+    }
+   },
+   "bleh": {
+    "label": "메롱",
+    "params": {
+     "tongue": 1,
+     "mouthOpen": 0.3,
+     "mouthWide": 0.35,
+     "mouthForm": 0.5,
+     "eyeOpenL": 0.0,
+     "eyeOpenR": 0.9,
+     "blush": 0.3,
+     "browL": 0.25
+    }
+   }
+  },
+  "clothes": {
+   "body": {
+    "top": 731.5,
+    "hem": 1008.0
+   }
+  },
+  "sprites": {
+   "eye_closed_r": {
+    "file": "sprites/eye_closed_r.png",
+    "w": 133.46,
+    "h": 25.82,
+    "cx": 397.25,
+    "cy": 610.11
+   },
+   "eye_closed_l": {
+    "file": "sprites/eye_closed_l.png",
+    "w": 140.22,
+    "h": 27.21,
+    "cx": 633.85,
+    "cy": 618.58
+   },
+   "eye_smile_r": {
+    "file": "sprites/eye_smile_r.png",
+    "w": 115.98,
+    "h": 43.29,
+    "cx": 397.95,
+    "cy": 601.65
+   },
+   "eye_smile_l": {
+    "file": "sprites/eye_smile_l.png",
+    "w": 123.9,
+    "h": 46.04,
+    "cx": 629.65,
+    "cy": 610.4
+   },
+   "mouth_closed": {
+    "file": "sprites/mouth_closed.png",
+    "w": 56.28,
+    "h": 7.37,
+    "cx": 517.3,
+    "cy": 662.48
+   },
+   "mouth_a": {
+    "file": "sprites/mouth_a.png",
+    "w": 58.8,
+    "h": 36.48,
+    "cx": 517.3,
+    "cy": 668.54
+   },
+   "mouth_e": {
+    "file": "sprites/mouth_e.png",
+    "w": 59.38,
+    "h": 25.03,
+    "cx": 517.3,
+    "cy": 662.82
+   },
+   "mouth_o_small": {
+    "file": "sprites/mouth_o_small.png",
+    "w": 39.98,
+    "h": 26.2,
+    "cx": 517.3,
+    "cy": 663.4
+   },
+   "mouth_i": {
+    "file": "sprites/mouth_i.png",
+    "w": 63.65,
+    "h": 26.59,
+    "cx": 517.3,
+    "cy": 663.59
+   },
+   "mouth_o": {
+    "file": "sprites/mouth_o.png",
+    "w": 40.75,
+    "h": 39.01,
+    "cx": 517.3,
+    "cy": 669.8
+   },
+   "mouth_smile": {
+    "file": "sprites/mouth_smile.png",
+    "w": 62.88,
+    "h": 27.36,
+    "cx": 517.3,
+    "cy": 663.98
+   },
+   "mouth_u": {
+    "file": "sprites/mouth_u.png",
+    "w": 38.62,
+    "h": 47.16,
+    "cx": 517.3,
+    "cy": 673.88
+   },
+   "mouth_laugh": {
+    "file": "sprites/mouth_laugh.png",
+    "w": 57.25,
+    "h": 46.77,
+    "cx": 517.3,
+    "cy": 673.68
+   },
+   "mouth_rest": {
+    "file": "sprites/mouth_rest.png",
+    "w": 59.5,
+    "h": 44.1,
+    "cx": 517.65,
+    "cy": 670.95
+   },
+   "brow_neutral_r": {
+    "file": "sprites/brow_neutral_r.png",
+    "w": 125.3,
+    "h": 17.97,
+    "cx": 401.45,
+    "cy": 492.45
+   },
+   "brow_neutral_l": {
+    "file": "sprites/brow_neutral_l.png",
+    "w": 115.5,
+    "h": 16.23,
+    "cx": 647.15,
+    "cy": 520.8
+   },
+   "brow_up_r": {
+    "file": "sprites/brow_up_r.png",
+    "w": 94.04,
+    "h": 32.82,
+    "cx": 401.45,
+    "cy": 492.45
+   },
+   "brow_up_l": {
+    "file": "sprites/brow_up_l.png",
+    "w": 86.57,
+    "h": 29.64,
+    "cx": 647.15,
+    "cy": 520.8
+   },
+   "brow_sad_r": {
+    "file": "sprites/brow_sad_r.png",
+    "w": 95.86,
+    "h": 35.69,
+    "cx": 401.45,
+    "cy": 492.45
+   },
+   "brow_sad_l": {
+    "file": "sprites/brow_sad_l.png",
+    "w": 87.04,
+    "h": 32.23,
+    "cx": 647.15,
+    "cy": 520.8
+   },
+   "brow_angry_r": {
+    "file": "sprites/brow_angry_r.png",
+    "w": 112.54,
+    "h": 38.03,
+    "cx": 401.45,
+    "cy": 492.45
+   },
+   "brow_angry_l": {
+    "file": "sprites/brow_angry_l.png",
+    "w": 102.33,
+    "h": 34.58,
+    "cx": 647.15,
+    "cy": 520.8
+   },
+   "fx_blush_r": {
+    "file": "sprites/fx_blush_r.png",
+    "w": 84.0,
+    "h": 43.35,
+    "cx": 414.4,
+    "cy": 656.6
+   },
+   "fx_blush_l": {
+    "file": "sprites/fx_blush_l.png",
+    "w": 84.0,
+    "h": 50.26,
+    "cx": 633.5,
+    "cy": 665.0
+   },
+   "fx_tear_r": {
+    "file": "sprites/fx_tear_r.png",
+    "w": 32.2,
+    "h": 48.59,
+    "cx": 357.7,
+    "cy": 667.1
+   },
+   "fx_tear_l": {
+    "file": "sprites/fx_tear_l.png",
+    "w": 32.2,
+    "h": 47.72,
+    "cx": 678.3,
+    "cy": 674.1
+   },
+   "fx_sweat": {
+    "file": "sprites/fx_sweat.png",
+    "w": 39.2,
+    "h": 71.1,
+    "cx": 742.0,
+    "cy": 483.0
+   },
+   "fx_anger": {
+    "file": "sprites/fx_anger.png",
+    "w": 84.0,
+    "h": 83.83,
+    "cx": 707.0,
+    "cy": 329.0
+   },
+   "hand_r_relax": {
+    "file": "sprites/hand_r_relax.png",
+    "w": 153.03,
+    "h": 129.02,
+    "cx": 0,
+    "cy": 0,
+    "ax": 100.69,
+    "ay": 105.96,
+    "vx": -0.5156,
+    "vy": -0.8568,
+    "hand": true
+   },
+   "hand_l_relax": {
+    "file": "sprites/hand_l_relax.png",
+    "w": 151.53,
+    "h": 127.52,
+    "cx": 0,
+    "cy": 0,
+    "ax": 48.61,
+    "ay": 104.53,
+    "vx": 0.559,
+    "vy": -0.8291,
+    "hand": true
+   },
+   "hand_l_fist": {
+    "file": "sprites/hand_l_fist.png",
+    "w": 123.02,
+    "h": 114.77,
+    "cx": 0,
+    "cy": 0,
+    "ax": 113.45,
+    "ay": 30.22,
+    "vx": -0.8628,
+    "vy": 0.5055,
+    "hand": true
+   },
+   "hand_r_fist": {
+    "file": "sprites/hand_r_fist.png",
+    "w": 117.02,
+    "h": 114.02,
+    "cx": 0,
+    "cy": 0,
+    "ax": 6.94,
+    "ay": 31.72,
+    "vx": 0.8583,
+    "vy": 0.5131,
+    "hand": true
+   },
+   "hand_r_point": {
+    "file": "sprites/hand_r_point.png",
+    "w": 151.53,
+    "h": 125.27,
+    "cx": 0,
+    "cy": 0,
+    "ax": 42.23,
+    "ay": 129.49,
+    "vx": 0.522,
+    "vy": -0.8529,
+    "hand": true
+   },
+   "hand_l_point": {
+    "file": "sprites/hand_l_point.png",
+    "w": 150.78,
+    "h": 125.27,
+    "cx": 0,
+    "cy": 0,
+    "ax": 107.66,
+    "ay": 129.53,
+    "vx": -0.5211,
+    "vy": -0.8535,
+    "hand": true
+   },
+   "hand_r_v": {
+    "file": "sprites/hand_r_v.png",
+    "w": 116.27,
+    "h": 139.52,
+    "cx": 0,
+    "cy": 0,
+    "ax": 57.17,
+    "ay": 137.17,
+    "vx": 0.157,
+    "vy": -0.9876,
+    "hand": true
+   },
+   "hand_l_v": {
+    "file": "sprites/hand_l_v.png",
+    "w": 116.27,
+    "h": 139.52,
+    "cx": 0,
+    "cy": 0,
+    "ax": 58.44,
+    "ay": 137.2,
+    "vx": -0.1609,
+    "vy": -0.987,
+    "hand": true
+   },
+   "hand_r_heart": {
+    "file": "sprites/hand_r_heart.png",
+    "w": 121.52,
+    "h": 122.27,
+    "cx": 0,
+    "cy": 0,
+    "ax": 52.4,
+    "ay": 121.55,
+    "vx": 0.3646,
+    "vy": -0.9312,
+    "hand": true
+   },
+   "hand_l_heart": {
+    "file": "sprites/hand_l_heart.png",
+    "w": 122.27,
+    "h": 123.77,
+    "cx": 0,
+    "cy": 0,
+    "ax": 69.37,
+    "ay": 121.75,
+    "vx": -0.3709,
+    "vy": -0.9287,
+    "hand": true
+   },
+   "hand_l_spread": {
+    "file": "sprites/hand_l_spread.png",
+    "w": 161.28,
+    "h": 152.28,
+    "cx": 0,
+    "cy": 0,
+    "ax": 54.94,
+    "ay": 135.85,
+    "vx": 0.1571,
+    "vy": -0.9876,
+    "hand": true
+   },
+   "hand_r_spread": {
+    "file": "sprites/hand_r_spread.png",
+    "w": 156.78,
+    "h": 151.53,
+    "cx": 0,
+    "cy": 0,
+    "ax": 101.13,
+    "ay": 134.98,
+    "vx": -0.1593,
+    "vy": -0.9872,
+    "hand": true
+   },
+   "hand_r_palm": {
+    "file": "sprites/hand_r_palm.png",
+    "w": 141.02,
+    "h": 130.52,
+    "cx": 0,
+    "cy": 0,
+    "ax": 52.6,
+    "ay": 123.22,
+    "vx": 0.4148,
+    "vy": -0.9099,
+    "hand": true
+   },
+   "hand_l_palm": {
+    "file": "sprites/hand_l_palm.png",
+    "w": 137.27,
+    "h": 126.02,
+    "cx": 0,
+    "cy": 0,
+    "ax": 84.48,
+    "ay": 118.87,
+    "vx": -0.403,
+    "vy": -0.9152,
+    "hand": true
+   },
+   "hand_r_open": {
+    "file": "sprites/hand_r_open.png",
+    "w": 150.78,
+    "h": 129.77,
+    "cx": 0,
+    "cy": 0,
+    "ax": 97.51,
+    "ay": 115.87,
+    "vx": -0.1424,
+    "vy": -0.9898,
+    "hand": true
+   },
+   "hand_l_open": {
+    "file": "sprites/hand_l_open.png",
+    "w": 151.53,
+    "h": 129.77,
+    "cx": 0,
+    "cy": 0,
+    "ax": 50.57,
+    "ay": 114.93,
+    "vx": 0.1665,
+    "vy": -0.986,
+    "hand": true
+   },
+   "hand_l_grab": {
+    "file": "sprites/hand_l_grab.png",
+    "w": 135.77,
+    "h": 141.77,
+    "cx": 0,
+    "cy": 0,
+    "ax": 83.61,
+    "ay": 137.6,
+    "vx": -0.2085,
+    "vy": -0.978,
+    "hand": true
+   },
+   "hand_r_grab": {
+    "file": "sprites/hand_r_grab.png",
+    "w": 134.27,
+    "h": 140.27,
+    "cx": 0,
+    "cy": 0,
+    "ax": 51.61,
+    "ay": 136.71,
+    "vx": 0.2019,
+    "vy": -0.9794,
+    "hand": true
+   },
+   "hand_r_pinch": {
+    "file": "sprites/hand_r_pinch.png",
+    "w": 149.28,
+    "h": 117.02,
+    "cx": 0,
+    "cy": 0,
+    "ax": 49.36,
+    "ay": 124.6,
+    "vx": 0.4384,
+    "vy": -0.8988,
+    "hand": true
+   },
+   "hand_l_pinch": {
+    "file": "sprites/hand_l_pinch.png",
+    "w": 145.52,
+    "h": 116.27,
+    "cx": 0,
+    "cy": 0,
+    "ax": 94.92,
+    "ay": 122.3,
+    "vx": -0.4174,
+    "vy": -0.9087,
+    "hand": true
+   }
+  }
+ }
+}
